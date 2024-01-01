@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overscroll-behavior-y: none;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    src: url(Font/Forum-Regular.ttf);
+    font-family: Forum-Regular;
+}
+
+@font-face {
+    src: url(Font/Barlow-Regular.ttf);
+    font-family: Barlow;
+}
+
+body{
+    background-color: #414659;
+}
+
+html{
+    scroll-padding-top: 70px;
+}
+
+/* header color*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:rgb(20, 38, 111);
+    z-index: 1;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: Forum-Regular;
+}
+
+.container{
+    width:100%;
+    margin:auto;
+}
+
+.navbar{
+    width: 95%;
+    margin:auto;
+    min-height: 70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:60px;
+}
+
+.nav-branding{
+    font-size: 2.5em;
+    margin-left: 5%;
+    font-family: Forum;
+}
+
+
+/* body */
+.text p{
+    color:rgb(255, 255, 255);
+    
+    font-size: 1.7em;
+    filter:none;
+    font-family: Barlow;
+}
+
+
+.dList {
+    color:rgb(255, 255, 255);
+    font-size: 1.9em;
+    filter:none;
+    font-family: Barlow;
+}
+
+#hOne{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 100%;
+    font-size: 3em;
+    font-family: Forum-Regular;
+}
+
+#hTwo{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 100%;
+    font-size: 3em;
+    font-family: Forum-Regular;
+}
+
+#homeSection{
+
+    background-image: url('space1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position-y: center;
+
+    height:400px;
+    width:100%;
+    padding-bottom: 20px;
+
+    position: relative;
+
+}
+
+#homeTxt{
+    font-size: 4.5em;
+    width: 90%;
+    display: block;
+    text-align: center;
+}
+
+.title{
+    color:rgb(255, 255, 255);
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Barlow;
+}
+
+
+#aboutSection{
+    height:auto;
+    width: 80%;
+    padding-top: 21px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%; 
+    border: solid 1px;
+    background-color: #4d6aa9;
+}
+
+#abT{
+    font-size: 1.7em;
+    padding: 30px;
+}
+
+#projectSection{
+    height:auto;
+    width: 80%;
+    padding-top: 21px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%; 
+    border: solid 1px;
+    background-color: #4d6aa9;
+}
+
+#projectSection a
+{
+    display: block;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+#footerSection{
+    height:auto;
+    width: 80%;
+    padding-top: 21px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%; 
+    border: solid 1px;
+    background-color: #4d6aa9;
+}
+
+/* linebreaks */
+.linebreaks{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* footer */
+#footer a{
+    color:white
+}
+
+#footText{
+    text-align: center;
+    color:white;
+    font-size: 1.7em;
+    padding: 30px;
+    font-family: Barlow;
+}
+
+#bottomRights{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: .5em;
+    color: lightgray;
+    font-family: Roboto;
+    font-weight:900;
+}
+
+.bottomFooter{
+    margin-top: 20px;
+    text-align: center;
+}
+.linkedin-square{
+    margin-top: 105px;
+}
+/* phone*/
+@media screen and (max-width: 600px){
+    aside, section, article{
+        width: 100%;
+    }
+}
